@@ -87,3 +87,24 @@ pub fn decimal(byte_size: impl Into<i128>) -> Result<String, std::fmt::Error> {
     }
     Ok(buffer)
 }
+
+
+#[cfg(test)]
+mod tests {
+
+    #[test]
+    fn binary() -> std::fmt::Result {
+        let hsize = super::binary(4_400)?;
+        println!("hsize={hsize}");
+        assert_eq!(hsize, "4 KiB");
+        Ok(())
+    }
+
+    #[test]
+    fn decimal() -> std::fmt::Result {
+        let hsize = super::decimal(4_812_935)?;
+        println!("hsize={hsize}");
+        assert_eq!(hsize, "4 MB");
+        Ok(())
+    }
+}
