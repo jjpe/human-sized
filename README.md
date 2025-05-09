@@ -8,7 +8,7 @@ either the decimal (e.g. `KB`) or binary (e.g. `KiB`) varieties.
 Add this dependency to your project's `Cargo.toml`:
 ``` toml
 [dependencies]
-human-sized = "0.1.0"
+human-sized = "0.2.0"
 ```
 
 We can now get a human-readable representation of the size  e.g.
