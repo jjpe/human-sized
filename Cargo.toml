@@ -1,0 +1,10 @@
+[package]
+name = "human-sized"
+version = "0.1.0"
+edition = "2024"
+authors = ["Joey Ezechiëls"]
+description = "Convert a size in bytes to a human-readable size."
+license = "Apache-2.0"
+rust-version = "1.86.0"
+
+[dependencies]
